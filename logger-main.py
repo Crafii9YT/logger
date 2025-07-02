@@ -4,7 +4,7 @@ import requests
 import pyperclip
 
 # Discord Webhook URL
-WEBHOOK_URL = "https://discord.com/api/webhooks/1381552461592133632/Hv4KIhrffNlsdoLwBC1zHqpuhofOMwQEGeHESz8DfJ0bQ5029T3C4DgSky2Zow5MF5Af"
+WEBHOOK_URL = "YOUR WEBHOOK URL HERE!"
 
 # Tkinter vorbereiten
 root = tk.Tk()
